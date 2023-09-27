@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/hw1Prep.css"/>
+    <script src="js/hw1LOTRloader.js" type="application/javascript"></script>
+    <meta charset="UTF-8">
+    <title>LOTR Favorites</title>
+</head>
+<body onload="SelectBox()">
+<header>
+    <span id="banner">
+        <nav>
+            <ul>
+<!--                The home and About me start on the left-->
+                <li><a href="#" style="color:yellow"> Home</a></li>
+                <li><a href='hw1AboutMe.html'> About Me</a></li>
+            <h2 id="title"> LOTR Favorites </h2>
+            </ul>
+
+
+        </nav>
+    </span>
+</header>
+<results id="resulting">
+    <h2>Results are here </h2>
+</results>
+
+
+
+<div id="selectionElement" >
+    <h2><b>Select a character</b></h2>
+    <label for="Characters" style="border: solid 2px red"><b>Choose a Character: </b></label>
+    <div>
+    <select id="Characters" style="border: solid 2px red"></select>
+    </div>
+    <div>
+    <button onclick="onLoad()" id="buttonSelect">Show Character Info</button>
+    </div>
+</div>
+</body>
+</html>
