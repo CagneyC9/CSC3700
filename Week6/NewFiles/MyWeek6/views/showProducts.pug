@@ -1,0 +1,24 @@
+include layouts/layoutBS1
+
+table
+
+    tr
+        th Book Title
+        th Author
+        th Price
+    each p in products
+        tr
+            td= p.Title
+            td= p.Author
+            td= p.Price
+
+h2 #{title}
+if products.length == 0
+    h2 Sorry no current products
+else
+    h2 Current Products
+    ol
+        each p in products
+            li= p.Title
+            li= p.Author
+            li= p.Price

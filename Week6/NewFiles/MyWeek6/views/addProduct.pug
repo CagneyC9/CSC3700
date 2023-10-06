@@ -1,0 +1,14 @@
+include layouts/layoutBS1
+h2  Add New Book
+form(action='/product' method='post')
+    form
+        .form-group
+            label(for='inputTitle') Title
+            input#inputTitle.form-control(type='text' name='Title' placeholder='Enter Book Title')
+        .form-group
+            label(for='inputAuthor') Author
+            input#inputAuthor.form-control(type='text' name='Author' placeholder='Author')
+        .form-group
+            label(for='inputPrice') Price
+            input#inputPrice.form-control(type='text' name='Price' placeholder='Price')
+        button.btn.btn-primary(type='submit') Submit
